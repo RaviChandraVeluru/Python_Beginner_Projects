@@ -60,10 +60,10 @@ while True:
             print('Currently there are no Categories to display.')
             print()
         else:
+            print('Summary: ')
             for keys,values in knowledge_base.items():
-                print('Summary: ')
                 print(f'{keys}: {len(values)} Facts ')
-                print()
+            print()
 
     # Exiting the knowledge base
     elif question in ['5','exit']:
@@ -78,4 +78,5 @@ while True:
         3 or search-cat
         4 or summary
         5 or exit
+
         ''')
